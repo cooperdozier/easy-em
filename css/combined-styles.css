@@ -1,0 +1,237 @@
+/* Pure CSS Framework Modifier - supposedly necessary to add padding and borders directly to grid units;
+I don't think I could reproduce a difference when disabling the rule last time I checked */
+.pure-g > div {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+/* page design formatting */
+/* used in every page */
+body {
+    background-color: #396C99;
+}
+.forty-em-one-column {
+    max-width: 40em;
+    margin: auto;
+}
+
+/* content formatting */ 
+/* potentially used in any page */
+.main-column {  /* class no longer applies to paragraphs - changed to .main-column from .main-par */
+    padding: 0em 1.2em;
+    text-align: justify;
+    border: solid 0.23em #1E135F;
+    border-top: solid 1px #1E135F;
+    background: #83B8E9;
+    }
+h1, h2 {
+    text-align: center;
+}
+.italic {
+    font-style: italic;
+}
+.bigger-font {
+    font-size: 18px;
+}
+.bold {
+    font-weight: bold;
+}
+.plain-list {
+    list-style-type: none;
+}
+.plain-list li {
+    margin: 0.7em auto 0.5em -2em;
+}
+
+/* footer formatting */
+.shrink {
+    padding: 0em;
+    margin: 0.5em 0.75em;
+}
+.foot-1 {
+    padding: 0em 1.2em;
+    text-align: justify;
+    border: solid 0.2em #1E135F;
+    background: #cfe9a9;
+    border-top: none;
+}
+
+/* Bottom footer block on every page */
+#copyright {
+    text-align: center;
+}
+
+/* basic */
+h4 {
+    margin: 0.7em auto 0.5em;
+}
+p, li {
+    font-family: sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+
+}
+main a, aside a {
+    font-family: 'anonymous_pro';
+    color: #461bac;
+    padding: 0.2em;
+}
+main a:visited, aside a:visited {
+    color: #794e78;
+}
+main a:hover, aside a:hover {
+    color: #c3d8f9;
+    background-color: #011E3C;
+    padding: 0.2em;
+    border-radius: 3px;
+}
+main a:active, aside a:active {
+    color: #011E5C; 
+    background-color: transparent;
+}
+
+/* ** !!! ** */
+/* collapsing menu */
+/* starter code (next 9 declarations) modified from https://purecss.io/layouts/tucked-menu-vertical/ 
+although javascript has been rewritten from scratch to do submenus since then.
+later declarations (additions to collapsing menu) are my creation */
+.nav-wrapper {
+    height: 2.1em;
+    overflow: hidden;
+    /* I guess the transition is triggered every time the height value changes. good to know. */
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+    padding-bottom: 0.5em;
+}
+.transforming-wrapper {
+    text-align: right;
+    font-weight: normal;
+    font-family: 'immortal';
+}
+.main-menu-hamburger {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.main-menu-hamburger .x-switch-animation {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 30px;
+    right: 13px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/* :first-child specifies not the child of elements having .x-switch-animation, but an element having .x-switch-animation itself
+and only if the element having .x-switch-animation element is the first subelement (child) of an element having .main-menu-hamburger */
+/* i guess this makes sense, because if .main-menu-hamburger:first-child referred to its own child,
+then the pseudo-class on Element.main-menu-hamburger would refer to an element other than the one having the pseudo-class */
+/* and pseudo-classes should point to their owners; there's no white space between after all */
+.main-menu-hamburger .x-switch-animation:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+.main-menu-hamburger .x-switch-animation:last-child {
+    -webkit-transform: translateY(-12px);
+    -moz-transform: translateY(-12px);
+    -ms-transform: translateY(-12px);
+    transform: translateY(-12px);
+}
+.main-menu-hamburger.x-shape .x-switch-animation {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.main-menu-hamburger.x-shape .x-switch-animation:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+@media (max-width: 47.999em) {
+    .transforming-wrapper {
+        text-align: left;
+    }
+    .main-menu-hamburger {
+        display: block;
+    }
+    #main-menu {
+        padding-left: 0.25em;
+    }
+}
+.pure-menu-heading {
+    text-transform: none;
+}
+
+/* additions to collapsing menu */
+#main-menu {
+    background: #E8F4E0;
+    border-bottom: solid 0.2em #10144D;
+    border-top: solid 0.2em #10144D;
+    padding-bottom: 0.65em;
+    padding-right: 0.25em;
+}
+.site-title {
+    font-size: 120%;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+.site-title:hover {
+    text-decoration: solid underline #426b96;
+    color: #426b96;
+}
+.pure-menu-item {
+    padding-top: 0.25em;
+    margin-right: 0.5em;
+}
+.pure-menu-link {
+    white-space: normal;
+    padding: 0.5em 0.4em;
+    display: inline-block;
+    border: solid 0.1em #E8F4E0;
+}
+a.pure-menu-link:hover {
+    border-radius: 4px;
+    border: solid 0.1em #426b96;
+}
+
+/* additions when changing to menu/submenu layout */
+#submenu {
+    display: none;
+    padding-left: 0;
+}
+.pure-menu-horizontal .pure-menu-heading,
+.pure-menu-horizontal .pure-menu-item,
+.pure-menu-horizontal .pure-menu-separator {
+	vertical-align: top;
+}
+.submenu-heading, .submenu-item {
+    text-align: left;
+}
+.pure-menu-link:focus, .pure-menu-link:hover{
+    border: 0.1em solid #ee3333;
+    border-radius: 6px;
+}
+#submenu.narrow-menu {
+    padding-left: 1em;
+}
+.submenu-link {
+    display: list-item;
+    list-style: circle inside;
+}
