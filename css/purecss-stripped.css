@@ -141,6 +141,10 @@ or floats?
 /* after removing ineffective units on logo, the only uses of pure-u* units 
 except pure-u-1 are pure-u-md-1-4 and pure-u-md-3-4 on main navigation 
  A reduced set of the -md- responsive grid rules are at the bottom  of the file */
+/* these apply when the screen is SMALLER than the -md- breakpoint (768px).
+in that circumstance a one-column design is often advisable.
+if you want pure-u-x for halves, 3rds, 4ths, 5ths, and 6ths, include the extra-no-media-query-grid.css,
+or copy in its contents */
 .pure-u-1 {
 	display: inline-block;
 	letter-spacing: normal;

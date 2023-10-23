@@ -1,8 +1,8 @@
 /* Pure CSS Framework Modifier - supposedly necessary to add padding and borders directly to grid units;
 I don't think I could reproduce a difference when disabling the rule last time I checked */
 .pure-g > div {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
+        /* -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box; */
         box-sizing: border-box;
     }
 
@@ -15,34 +15,16 @@ body {
     max-width: 40em;
     margin: auto;
 }
-
-/* content formatting */ 
-/* potentially used in any page */
-.main-column {  /* class no longer applies to paragraphs - changed to .main-column from .main-par */
+.main-column {
     padding: 0em 1.2em;
     text-align: justify;
     border: solid 0.23em #7C1A2B;
     border-top: solid 1px #7C1A2B;
     background: #FAFBEA;
     }
-h1, h2 {
-    text-align: center;
-}
-.italic {
-    font-style: italic;
-}
-.bigger-font {
-    font-size: 18px;
-}
-.bold {
-    font-weight: bold;
-}
-.plain-list {
-    list-style-type: none;
-}
-.plain-list li {
-    margin: 0.7em auto 0.5em -2em;
-}
+
+/* content formatting */ 
+/* potentially used in any page */
 
 /* footer formatting */
 .shrink {
@@ -57,38 +39,33 @@ h1, h2 {
     border-top: none;
 }
 
-/* Bottom footer block on every page */
-#copyright {
-    text-align: center;
-}
-
 /* basic */
-h4 {
-    margin: 0.7em auto 0.5em;
+h1, h2 {
+    text-align: center;
 }
 p, li {
     font-family: sans-serif;
 }
 h1, h2, h3, h4 {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     letter-spacing: 1px;
 
 }
-main a, aside a {
-    font-family: 'anonymous_pro';
+main a {
+    font-family: 'Courier New', Courier, monospace;;
     color: #461bac;
     padding: 0.2em;
 }
-main a:visited, aside a:visited {
+main a:visited {
     color: #794e78;
 }
-main a:hover, aside a:hover {
+main a:hover {
     color: #c3d8f9;
     background-color: #011E3C;
     padding: 0.2em;
     border-radius: 3px;
 }
-main a:active, aside a:active {
+main a:active {
     color: #011E5C; 
     background-color: transparent;
 }
@@ -102,9 +79,7 @@ later declarations (additions to collapsing menu) are my creation */
     height: 2.1em;
     overflow: hidden;
     /* I guess the transition is triggered every time the height value changes. good to know. */
-    -webkit-transition: height 0.5s;
-    -moz-transition: height 0.5s;
-    -ms-transition: height 0.5s;
+    /* -webkit-transition: height 0.5s;*/
     transition: height 0.5s;
     padding-bottom: 0.5em;
 }
@@ -129,9 +104,9 @@ later declarations (additions to collapsing menu) are my creation */
     position: absolute;
     top: 30px;
     right: 13px;
-    -webkit-transition: all 0.5s;
+    /* -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
+    -ms-transition: all 0.5s; */
     transition: all 0.5s;
 }
 /* :first-child specifies not the child of elements having .x-switch-animation, but an element having .x-switch-animation itself
@@ -140,27 +115,15 @@ and only if the element having .x-switch-animation element is the first subeleme
 then the pseudo-class on Element.main-menu-hamburger would refer to an element other than the one having the pseudo-class */
 /* and pseudo-classes should point to their owners; there's no white space between after all */
 .main-menu-hamburger .x-switch-animation:first-child {
-    -webkit-transform: translateY(-6px);
-    -moz-transform: translateY(-6px);
-    -ms-transform: translateY(-6px);
     transform: translateY(-6px);
 }
 .main-menu-hamburger .x-switch-animation:last-child {
-    -webkit-transform: translateY(-12px);
-    -moz-transform: translateY(-12px);
-    -ms-transform: translateY(-12px);
     transform: translateY(-12px);
 }
 .main-menu-hamburger.x-shape .x-switch-animation {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 .main-menu-hamburger.x-shape .x-switch-animation:first-child {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 @media (max-width: 47.999em) {
