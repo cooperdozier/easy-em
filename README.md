@@ -9,5 +9,5 @@ To add and remove menu items that will be visible but without extra space in all
 
 built this for my site, savetheoxygen.org about Ocean Hypoxia and Climate Change, after I couldn't find a way to adapt the example horizontal to vertical menu from the example at [https://purecss.io/layouts/tucked-menu-vertical/](https://purecss.io/layouts/tucked-menu-vertical/) that I had been using, to allow for menu items exceeding the window's horizontal width.
 
-# For Novices:
-## ***If you have never used GitHub before, the way to get the code is: click the green Code button, click Download Zip, extract it on your computer, and double click either HTML file.***
+## For Novices:
+### ***If you have never used GitHub before, the way to get the code is: click the green Code button, click Download Zip, extract it on your computer, and double click either HTML file.***
