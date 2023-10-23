@@ -1,7 +1,10 @@
 # Easy Em responsive JavaScript menu/submenu system
+
+[Live Preview of Easy Em](https://cooperdozier.github.io/easy-em/) 
+
 Make sure you try narrowing and widening the window if you're on a desktop or laptop and viewing in both portrait and landscape on a smartphone or tablet. Some smartphones will not display the widescreen format even in landscape.
 
-[Live Preview of Easy Em](https://cooperdozier.github.io/easy-em/) It optionally integrates with the full set of Pure CSS framework rules, if you just comment out my 'purecss-stripped.css' and uncomment the CDN stylesheet links in the HTML. Also, the CDN links are for Pure 3.0.0 while mine were taken from Pure 2.0.3. Not sure if there are any significant differences in the ones I included yet.
+It optionally integrates with the full set of Pure CSS framework rules, if you just comment out my 'purecss-stripped.css' and uncomment the CDN stylesheet links in the HTML. Also, the CDN links are for Pure 3.0.0 while mine were taken from Pure 2.0.3. Not sure if there are any significant differences in the ones I included yet.
 
 To add and remove menu items that will be visible but without extra space in all states, just change 3 JavaScript height values (instructions and annotations in [from-scratch-menu-annotated.js](main/js/from-scratch-menu-annotated.js) and add/remove the code for the new menu entries in the HTML files. 
 
