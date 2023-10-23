@@ -236,6 +236,8 @@ a.pure-menu-link:hover {
     padding-left: 1em;
 }
 .submenu-link {
-    display: list-item;
+    display: list-item; 
+    /* comment out "display: list-item;" for non-full width links, but as written 
+    it will also make the bullet circles disappear */
     list-style: circle inside;
 }
