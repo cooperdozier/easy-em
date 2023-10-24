@@ -13,4 +13,4 @@ It optionally integrates with the full set of Pure CSS framework rules, if you j
 **For Novices:**
 ***If you have never used GitHub before, the way to get the code is: click the green Code button, click Download Zip, extract it on your computer, and double click either HTML file.***
 
-I built this for my site, savetheoxygen.org which is about Ocean Hypoxia and Climate Change, after I couldn't find a way to adapt the horizontal to vertical menu from the example at [https://purecss.io/layouts/tucked-menu-vertical/](https://purecss.io/layouts/tucked-menu-vertical/) that I had been using, such that it allows for menu items exceeding the window's horizontal width.
+I built this for my site, [SaveTheOxygen.org](savetheoxygen.org) which is about Ocean Hypoxia and Climate Change, after I couldn't find a way to adapt the horizontal to vertical menu from the example at [https://purecss.io/layouts/tucked-menu-vertical/](https://purecss.io/layouts/tucked-menu-vertical/) that I had been using, such that it allows for menu items exceeding the window's horizontal width.
