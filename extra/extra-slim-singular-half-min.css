@@ -1,3 +1,7 @@
+/* This files contains all the needed CSS in one singular file, half minified to save bits & screen space 
+but still be readable, plus a few rules that aren't used in the example implementation (lines 17-36)
+to enable getting started quickly if you don't want to use all of PureCSS */
+
 /*! Pure v2.0.3 | Copyright 2013 Yahoo! Licensed under the BSD License. https://github.com/pure-css/pure/blob/master/LICENSE.md */
 /*! normalize.css v | MIT License | git.io/normalize Copyright (c) Nicolas Gallagher and Jonathan Neal */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -10,7 +14,7 @@ main{display:block}
 h1{font-size:2em;margin:.67em 0}
 a{background-color:transparent}
 
-/* lines 14-27  and 31-33 are unused but there's a good chance you would want them on an actual website.
+/* lines 19-32  and 34-36 are unused but there's a good chance you would want them on an actual website.
 you can safely delete them. */
 pre{font-family:monospace,monospace;font-size:1em}
 a{background-color:transparent}
