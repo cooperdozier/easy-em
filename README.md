@@ -11,6 +11,6 @@ Also included are a set of Facebook Open Graph and Twitter meta tags, the best I
 It optionally integrates with the full set of Pure CSS framework rules, if you just comment out my 'purecss-stripped.css' and uncomment the CDN stylesheet links in the HTML. Also, the CDN links are for Pure 3.0.0 while mine were taken from Pure 2.0.3. Not sure if there are any significant differences in the ones I included yet.
 
 **For Novices:**
-***If you have never used GitHub before, the way to get the code is: click the green Code button, click Download Zip, extract it on your computer, and double click either HTML file.***
+***If you have never used GitHub before, the way to get and run the code is: click the green Code button, click Download Zip, extract it on your computer, and double click either HTML file.***
 
 I built this for my site, [SaveTheOxygen.org](savetheoxygen.org) which is about Ocean Hypoxia and Climate Change, after I couldn't find a way to adapt the horizontal to vertical menu from the example at [https://purecss.io/layouts/tucked-menu-vertical/](https://purecss.io/layouts/tucked-menu-vertical/) that I had been using, such that it allows for menu items exceeding the window's horizontal width.
