@@ -1,0 +1,14 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://www.example.com/</loc>
+<lastmod>2022-11-21</lastmod>
+</url>
+<url>
+<loc>https://www.example.com/index.html</loc>
+<lastmod>2023-10-21</lastmod>
+</url>
+<loc>https://www.example.com/template.html</loc>
+<lastmod>2023-10-21</lastmod>
+</url>
+</urlset>
