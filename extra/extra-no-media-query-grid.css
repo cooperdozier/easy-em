@@ -1,5 +1,6 @@
 /* add these to your CSS if you want to have more than one column in small screen sizes, or
-to use no responsive breakpoints at all. in the latter case you can delete the pure-u-md-x-y rules */
+to use no responsive breakpoints at all. in the latter case you can delete the pure-u-md-x-y rules 
+in ../css/combined-styles.css */
 .pure-u {
     display: inline-block;
     vertical-align: top;
