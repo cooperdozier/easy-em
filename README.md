@@ -10,7 +10,7 @@ To add and remove menu items that will be visible but without extra space in all
 
 Also included are a set of Facebook Open Graph and Twitter meta tags, the best I've been able to puzzle out the currently used syntax, and limited to those that seemed like they might be applicable to any web page.
 
-It optionally integrates with the full set of Pure CSS framework rules, if you just comment out my 'purecss-stripped.css' and uncomment the CDN stylesheet links in the HTML. Also, the CDN links are for Pure 3.0.0 while mine were taken from Pure 2.0.3. Not sure if there are any significant differences in the ones I included yet.
+It optionally integrates with the full set of Pure CSS framework rules, if you just comment out my 'purecss-stripped.css' and uncomment the CDN stylesheet links in the HTML. Also, the CDN links are for Pure 3.0.0 while mine were taken from Pure 2.0.3. But I don't think there are any significant differences in the rules I kept in/included.
 
 **For Novices:**
 ***If you have never used GitHub before, the way to get the code/files and make Easy Em go is: click the green Code button, click Download Zip, extract it on your computer, and double click either HTML file, they will open from your hard disk into a web browser. Any text editor or programmer's text editor can be used for modifications and writing web page content. Microsoft's Visual Studio Code\*\*\* is free and very popular.***
