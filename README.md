@@ -15,7 +15,7 @@ It optionally integrates with the full set of Pure CSS framework rules, if you j
 **For Novices:**
 ***If you have never used GitHub before, the way to get the code/files and make Easy Em go is: click the green Code button, click Download Zip, extract it on your computer, and double click either HTML file, they will open from your hard disk into a web browser. Any text editor or programmer's text editor can be used for modifications and writing web page content. Microsoft's Visual Studio Code\*\*\* is free and very popular.***
 
-I built this for my site, [SaveTheOxygen.org](savetheoxygen.org) which is about Ocean Hypoxia and Climate Change, after I couldn't find a way to adapt the horizontal to vertical menu from the example at [https://purecss.io/layouts/tucked-menu-vertical/](https://purecss.io/layouts/tucked-menu-vertical/) that I had been using, such that it allows for menu items exceeding the window's horizontal width.
+I built this for my site, [SaveTheOxygen.org](savetheoxygen.org) (On Oceans) which is about Ocean Hypoxia, Climate Change, our Earth system/Systems theory (such as the shifting of the global thermohaline circulation of the oceans), politics, energy and activism after I couldn't find a way to adapt the horizontal to vertical menu from the example at [https://purecss.io/layouts/tucked-menu-vertical/](https://purecss.io/layouts/tucked-menu-vertical/) that I had been using, such that it allows for menu items exceeding the window's horizontal width.
 
 ---
 
