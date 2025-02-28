@@ -80,7 +80,21 @@ hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visib
 	.pure-u-md-1{width:100%}
 }
 
+/* if you need more grid column options than this (1/12ths & 24ths 
+are also included in Regular Pure CSS), either you are doing something wrong
+or you are creating artwork. If you just need a website that runs smooth and quick
+don't bother with 12ths and 24ths. If you're creating art, consider if simple, unmixed
+percentage fractions are the right way to go for your project, really.... */
 
+/* and why are you using the half-minified file AND 24ths units? you clearly
+don't value ease and efficiency at the top of the scale.... */
+
+/* also note that pure-g grids can be nested inside pure-u-? units and such and that
+(not that you should unless its just for fun or youre doing something highly technical.
+Find another way if you catch yourself trying to nest grids).. and that 1/5ths units
+and 1/6ths (by extension 12ths and 24ths) do not cleanly divide into each other.
+1/5ths also do not mix with 1/2s or 1/4s ..... rambling. If you break it up to 12ths
+1/2s 1/4s 1/6s and 1/3s can all be expressed in those terms but not 1/5s. rambling...... */
 
 
 
