@@ -2,6 +2,9 @@
 
 [Live Preview of Easy Em](https://cooperdozier.github.io/easy-em/) 
 
+To get started for beginners check out Lessons 1 & 2 on my blog Lost In Mist (Lessons 3 & 4 forthcoming soon)
+[Easy Em Lessons 1 & 2 for beginners](https://lostinmist.wordpress.com/2025/12/28/easy-em-website-framework-lessons-1-2/)
+
 Many small businesses, individuals, students, and hobbyists can get by just fine with a very simple website as long as they can have a variable number of pages, simplicity, cross-device/screen-size functionality and speed, and a contact form. This is written to be comprehensible and adjustable, even for relative novices at web design. It is also lightning fast since there's no complicated engines or backend stuff underneath and works on any screen, even flip phones. For the contact form you can use the services of FormSpree.io (recommended by Dreamhost when they deprecated Unix formmail support which I never understood how to work anyway) or many other similar providers. If you need to make online sales / take payments for services that is out of the scope of this project\*
 
 Make sure you try narrowing and widening the window if you're on a desktop or laptop and viewing in both portrait and landscape on a smartphone or tablet. Some smartphones will not display the widescreen format even in landscape.
